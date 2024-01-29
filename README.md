@@ -21,7 +21,7 @@ repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
 
 ### Clone the Manifest to add necessary dependencies for gsi:
  
-    git clone https://github.com/MisterZtr/treble_manifest.git .repo/local_manifests  -b 14
+    git clone https://github.com/kelexine/treble_manifest.git .repo/local_manifests  -b 14
   
 
 
@@ -66,7 +66,7 @@ In rom folder,
  ```
 . build/envsetup.sh
 ccache -M 50G -F 0
-lunch treble_arm64_bvN-userdebug
+lunch treble_a64_bvN-userdebug
 make systemimage -j$(nproc --all)
  ```
 
@@ -78,7 +78,7 @@ If you want to compress the build.
 In rom folder,
 
    ```
-cd out/target/product/tdgsi_arm64_ab
+cd out/target/product/tdgsi_a64_ab
 7z a system.img.xz "system.img"
    ```
 
